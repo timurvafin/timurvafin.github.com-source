@@ -54,7 +54,7 @@ table {
 
 .title, #home, .footer,
 #post h1, #post h2, #post p, #post ol, #post ul,
-#related {
+#related, #disqus_thread {
 	width: 650px;
 	margin: 1em auto;
 	text-align: left;

@@ -5,5 +5,6 @@ cd _site
 git add .
 git commit -m "`date`"
 git push -f origin master
-#mv .git ../public.git
+rm -rf ../_public.git
+mv .git ../_public.git
 cd ../
