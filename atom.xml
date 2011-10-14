@@ -5,8 +5,8 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Тимур Вафин</title>
- <link href="http://blog.timurv.ru/atom.xml" rel="self"/>
- <link href="http://blog.timurv.ru/"/>
+ <link href="http://timurv.ru/atom.xml" rel="self"/>
+ <link href="http://timurv.ru/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://blog.timurv.ru/</id>
  <author>
@@ -17,7 +17,7 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://blog.timurv.ru{{ post.url }}"/>
+   <link href="http://timurv.ru{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://tom.preston-werner.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
