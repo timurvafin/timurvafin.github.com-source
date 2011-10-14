@@ -1,0 +1,12 @@
+markdown: rdiscount
+pygments: true
+exclude:
+- Rakefile
+- README.textile
+- public
+- Gemfile
+- Gemfile.lock
+- deploy.sh
+flickr_set:
+ api_key: ''
+ shared_secret: ''
