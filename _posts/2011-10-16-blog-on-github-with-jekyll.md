@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Блог переехал на статичный HTML
+published: true
 ---
 
 # {{page.title}}

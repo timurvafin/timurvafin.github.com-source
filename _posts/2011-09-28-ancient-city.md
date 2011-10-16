@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tailand, Ancient City
+published: true
 ---
 
 # {{page.title}}

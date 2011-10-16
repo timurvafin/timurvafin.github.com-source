@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning Ruby
+published: true
 ---
 
 # {{page.title}}

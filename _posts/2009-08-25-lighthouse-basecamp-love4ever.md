@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lighthouse+Basecamp=Love4ever
+published: true
 ---
 
 # {{page.title}}

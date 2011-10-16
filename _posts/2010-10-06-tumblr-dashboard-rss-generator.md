@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tumblr dashboard RSS generator is up and running
+published: true
 ---
 
 # {{page.title}}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: RSS fead for Tumblr dashboard
+published: true
 ---
 
 # {{page.title}}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Национальный морской парк "Му-Ко-Анг-Тхонг"
+published: true
 ---
 
 # {{page.title}}
