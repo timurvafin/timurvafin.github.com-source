@@ -1,8 +1,8 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 cp -R _public.git _site/.git
 cd _site
-git add .
+git add -A .
 git commit -m "`date`"
 git push -f origin master
 rm -rf ../_public.git
