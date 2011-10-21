@@ -1,4 +1,6 @@
 markdown: rdiscount
+rdiscount:
+  extensions: [:smart]
 pygments: true
 exclude:
 - Rakefile
