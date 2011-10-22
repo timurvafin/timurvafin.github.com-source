@@ -8,7 +8,7 @@ layout: nil
  <link href="http://timurv.ru/atom.xml" rel="self"/>
  <link href="http://timurv.ru/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://blog.timurv.ru/</id>
+ <id>http://timurv.ru/</id>
  <author>
    <name>Timur Vafin</name>
    <email>me@timurv.ru</email>
@@ -19,7 +19,7 @@ layout: nil
    <title>{{ post.title }}</title>
    <link href="http://timurv.ru{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://tom.preston-werner.com{{ post.id }}</id>
+   <id>http://timurv.ru{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
