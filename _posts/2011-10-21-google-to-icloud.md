@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Полностью переехал с Google Calendar  & Contacts на iCloud
+published: true
 ---
 
 # {{page.title}}
@@ -25,6 +26,3 @@ title: Полностью переехал с Google Calendar  & Contacts на i
 примерно в такой строчке `https://me%40timurv.ru@p02-contacts.icloud.com:443/**[uniqueid]**/mm/push/register`
 
 Пока все хорошо, единственный минус, в Gmail не будет актуальной адресной книги. Почему то нельзя синхронизировать контакты и с iCould и с Google.
-
-
-
