@@ -8,7 +8,7 @@ layout: default
 
     {% for post in site.tags[page.tag] %}
       <li>
-        <span>{{ post.date | date_to_string }}</span> &raquo;
+        <span>{{ post.date | strftime: "%d %b %Y" }}</span> &raquo;
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
