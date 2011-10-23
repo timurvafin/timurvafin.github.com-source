@@ -4,8 +4,6 @@ title: Tumblr dashboard RSS generator is up and running
 published: true
 ---
 
-# {{page.title}}
-
 As [I've mentioned some time ago](http://timurv.ru/2010/08/26/rss-fead-for-tumblr-dashboard) I have an idea to develop something like proxy between Tumblr API and RSS reader.
 
 **I've done.**

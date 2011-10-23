@@ -4,8 +4,6 @@ title: Google mail labs I use every day
 published: true
 ---
 
-# {{page.title}}
-
 Let me share what crazy experimental stuff (Google calls labs stuff like this :-)) I use in my google apps mail on timurv.ru.
 
 * Default "Reply to all" - Make "Reply to all" your default option for responding to emails.

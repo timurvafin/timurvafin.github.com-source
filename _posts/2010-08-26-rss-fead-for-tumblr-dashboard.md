@@ -4,8 +4,6 @@ title: RSS fead for Tumblr dashboard
 published: true
 ---
 
-# {{page.title}}
-
 Hey guys,
 
 Going to use Tumblr as platform for my personal weblog around web technology and other tech themes.

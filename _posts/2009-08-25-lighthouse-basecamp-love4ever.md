@@ -4,8 +4,6 @@ title: Lighthouse+Basecamp=Love4ever
 published: true
 ---
 
-# {{page.title}}
-
 In our daily work we usually use [Basecamp](http://basecamphq.com) for communication on projects and [Lighthouse](http://lighthouseapp.com) for tasks & bugs tracking. I'm sure you know how BC and LH rocks, so I will tell you how to integrate BC "time tracking feature" with LH tickets.
 
 We have created a simple ruby script for integrating BC into LH using their APIs - so here is [lh2bc ruby gem](https://github.com/fs/lh2bc). Lh2Bc creates projects and tickets created in LH as to-do lists and to-do items in the BC accordingly, so you can track work time in the BC's to-dos in a simple way.

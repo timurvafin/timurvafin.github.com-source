@@ -2,6 +2,10 @@
 layout: default
 ---
 <div id="post">
+  <h1>{{page.title}}</h1>
+  
+  <p class="date-created">{{ page.date | date_to_string }}</p>
+  
   {{ content }}
 </div>
 

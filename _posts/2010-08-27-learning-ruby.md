@@ -4,8 +4,6 @@ title: Learning Ruby
 published: true
 ---
 
-# {{page.title}}
-
 In Flatsoft/Flatsourcing we looking for talented developers every day and usually 3-4 times per week we have interview with developers. They are Java/PHP developers which want to switch to the new technology like Ruby/Rails.
 
 I can recommend some really stuff for learning Ruby, here they are:
