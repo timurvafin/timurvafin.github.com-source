@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Google mail labs I use every day
+tags:
+- Google
 published: true
 ---
 

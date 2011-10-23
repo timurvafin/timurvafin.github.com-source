@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Блог переехал на статичный HTML
+tags:
+- Ruby
+- Jekyll
 published: true
 ---
 

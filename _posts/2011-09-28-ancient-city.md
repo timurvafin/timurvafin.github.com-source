@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Tailand, Ancient City
+tags:
+- Путешествия
+- Азия
+- Тайланд
 published: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: RSS fead for Tumblr dashboard
+tags:
+- Tumblr
 published: true
 ---
 

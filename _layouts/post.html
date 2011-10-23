@@ -4,7 +4,16 @@ layout: default
 <div id="post">
   <h1>{{page.title}}</h1>
   
-  <p class="date-created">{{ page.date | date_to_string }}</p>
+  <div class="meta">
+    <span class="date-created">{{ page.date | date_to_string }}</span>
+
+    <span class="tags">
+    	{% for tag in page.tags %}
+    	  <a href="/tags/{{ tag | transliterate | downcase }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
+    	{% endfor %}
+    </span>  
+  </div>
+  <div class="clear"></div>
   
   {{ content }}
 </div>

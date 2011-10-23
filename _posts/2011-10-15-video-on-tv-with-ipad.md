@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Смотрим кино на телеке с iMac через Ipad
+tags:
+- Apple
 published: true
 ---
 

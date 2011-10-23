@@ -52,8 +52,12 @@ table {
   font: 100%;
 }
 
+.clear {
+	clear: left;
+}
+
 .title, #home, .footer,
-#post h1, #post h2, #post p, #post ol, #post ul,
+#post h1, #post h2, #post p, #post ol, #post ul, #post .meta,
 #related, #disqus_thread {
 	width: 650px;
 	margin: 1em auto;
@@ -76,7 +80,7 @@ ul.posts {
     line-height: 1.75em;
   }
 
-  ul.posts span, .date-created {
+  ul.posts span, .date-created, .tags {
     color: #aaa;
     font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
@@ -161,6 +165,15 @@ ul.posts {
 }
 
   /* standard */
+
+	#post .date-created, #post .tags {
+		width: 50%;
+		float: left;
+	}
+	
+	#post .tags {
+		text-align: right;
+	}
 
 	#post blockquote {
 		margin-left: 1.35em;

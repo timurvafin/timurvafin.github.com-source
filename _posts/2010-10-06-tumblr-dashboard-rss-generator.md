@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Tumblr dashboard RSS generator is up and running
+tags:
+- Tumblr
 published: true
 ---
 

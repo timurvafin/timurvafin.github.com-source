@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Полностью переехал с Google Calendar  & Contacts на iCloud
+tags:
+- Google
 published: true
 ---
 

@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Тимур Вафин
 ---
 
 <div id="home">
   <ul class="posts">
-    {% for post in site.posts %}
+    <h1>{{ page.tag }}</h1>
+
+    {% for post in site.tags[page.tag] %}
       <li>
         <span>{{ post.date | date_to_string }}</span> &raquo;
         <a href="{{ post.url }}">{{ post.title }}</a>
@@ -14,6 +15,4 @@ title: Тимур Вафин
   </ul>
   
   {% tag_cloud %}
-  
 </div>
-  

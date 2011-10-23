@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Learning Ruby
+tags:
+- Ruby
 published: true
 ---
 
