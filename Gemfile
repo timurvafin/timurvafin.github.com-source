@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "rake"
 gem "powder"
 
 gem "jekyll"
