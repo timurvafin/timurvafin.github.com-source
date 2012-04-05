@@ -9,8 +9,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - deploy.sh
-flickr_set:
 - vendor
 - tmp
+flickr:
  api_key: ''
  shared_secret: ''
