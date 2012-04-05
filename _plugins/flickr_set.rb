@@ -28,29 +28,52 @@ require 'active_support/all'
 
 module Jekyll
   class FlickrSetTag < Liquid::Tag
+    class FlickrPhoto
+      def initialize(item, set)
+        @item, @set = item, set
+      end
+
+      def title
+        @item['title']
+      end
+
+      def url
+        @url ||= "http://www.flickr.com/photos/#{@set["ownername"]}/#{@item["id"]}/in/set-#{@set["id"]}"
+      end
+
+      def thumbnail_url
+        @thumbnail_url ||= @item["url_o"]
+      end
+
+      def date_taken
+        @date_taken ||= @item['datetaken'].to_datetime
+      end
+
+      def <=>(photo)
+        date_taken <=> photo.date_taken
+      end
+
+      def has_empty_title?
+        title =~ /DSC_\d+/
+      end
+    end
+
     def initialize(tag_name, config, token)
       super
 
       @user = config.split[0]
       @set  = config.split[1]
 
-      @config = Jekyll.configuration({})['flickr_set'] || {}
-
-      @config['gallery_tag']    ||= 'ol'
-      @config['gallery_class']  ||= 'gallery'
-      @config['a_href']         ||= nil
-      @config['a_target']       ||= '_blank'
-      @config['image_rel']      ||= ''
-      @config['image_size']     ||= 'o'
+      @config = Jekyll.configuration({})['flickr'] || {}
       @config['api_key']        ||= nil
       @config['shared_secret']  ||= nil
     end
 
     def render(context)
 <<-EOF
-<#{@config['gallery_tag']} class="#{@config['gallery_class']}">
+<ol class="gallery">
   #{photos.collect{|photo| render_thumbnail(photo)}.join}
-</#{@config['gallery_tag']}>
+</ul>
 EOF
     end
 
@@ -58,7 +81,7 @@ EOF
 <<-EOF
 <li>
   #{photo.title}<br>
-  <a href="#{photo.url}" target="#{@config['a_target']}">
+  <a href="#{photo.url}" target="_blank">
     <img src="#{photo.thumbnail_url}">
   </a>
 </li>
@@ -68,46 +91,16 @@ EOF
     def photos
       FlickRaw.api_key = @config['api_key']
       FlickRaw.shared_secret = @config['shared_secret']
-      
+
       @photos = Array.new
 
-      set = flickr.photosets.getPhotos("photoset_id" => @set, "extras" => "date_taken,url_#{@config['image_size']}")
+      set = flickr.photosets.getPhotos("photoset_id" => @set, "extras" => "date_taken,url_o")
       set["photo"].each do |photo|
-        @photos << FlickrPhoto.new(photo, @config['image_size'], set)
+        @photos << FlickrPhoto.new(photo, set)
       end
-      
+
       @photos.delete_if {|photo| photo.has_empty_title? }
       @photos.sort
-    end
-  end
-
-  class FlickrPhoto
-    def initialize(item, size, set)
-      @item, @size, @set = item, size, set
-    end
-
-    def title
-      @item['title']
-    end
-
-    def url
-      @url ||= "http://www.flickr.com/photos/#{@set["ownername"]}/#{@item["id"]}/in/set-#{@set["id"]}"
-    end
-
-    def thumbnail_url
-      @thumbnail_url ||= @item["url_#{@size}"]
-    end
-    
-    def date_taken
-      @date_taken ||= @item['datetaken'].to_datetime
-    end
-
-    def <=>(photo)
-      date_taken <=> photo.date_taken
-    end
-    
-    def has_empty_title?
-      title =~ /DSC_\d+/
     end
   end
 end
