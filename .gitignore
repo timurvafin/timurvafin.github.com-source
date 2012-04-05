@@ -2,4 +2,8 @@ _drafts/
 _site/
 _public.git
 _config.yml
-
+public
+.bundle
+vendor
+tmp
+bin
