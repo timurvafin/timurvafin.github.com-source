@@ -24,11 +24,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-	margin: 1em 0;
+  margin: 1em 0;
 }
 
 h1 {
-  
+
 }
 
 p {
@@ -53,15 +53,15 @@ table {
 }
 
 .clear {
-	clear: left;
+  clear: left;
 }
 
 .title, #home, .footer,
 #post h1, #post h2, #post p, #post ol, #post ul, #post .meta,
 #related, #disqus_thread {
-	width: 650px;
-	margin: 1em auto;
-	text-align: left;
+  width: 650px;
+  margin: 1em auto;
+  text-align: left;
 }
 
 
@@ -166,18 +166,18 @@ ul.posts {
 
   /* standard */
 
-	#post .date-created, #post .tags {
-		width: 50%;
-		float: left;
-	}
-	
-	#post .tags {
-		text-align: right;
-	}
+  #post .date-created, #post .tags {
+    width: 50%;
+    float: left;
+  }
 
-	#post blockquote {
-		margin-left: 1.35em;
-	}
+  #post .tags {
+    text-align: right;
+  }
+
+  #post blockquote {
+    margin-left: 1.35em;
+  }
 
   #post pre {
     border: 1px solid #ddd;
@@ -189,10 +189,10 @@ ul.posts {
     margin-left: 1.35em;
   }
 
-		#post ol li {
-			list-style-type: decimal-leading-zero;
-			list-style-position: inside;
-		}
+    #post ol li {
+      list-style-type: decimal-leading-zero;
+      list-style-position: inside;
+    }
 
   #post code {
     border: 1px solid #ddd;
@@ -217,26 +217,27 @@ ul.posts {
     background-color: #333;
   }
 
-	/* gallery */
-	
-	#post .gallery {
-		width: 100% !important;
-		text-align: center !important;
-	}
-	
-		#post ol.gallery li {
-			margin: 2em;
-			font-size: 80%;
-		}
-		
-			#post .gallery img {
-			  border-radius: 10px;
-			  -moz-border-radius: 10px;
-			  -webkit-border-radius: 10px;
-			  box-shadow: 0px 2px 8px rgba(0,0,0,0.33);
-			  overflow: hidden;
-			}
-		
+  /* gallery */
+
+  #post .gallery {
+    width: 100% !important;
+    text-align: center !important;
+    list-style: none;
+  }
+
+    #post .gallery li {
+      margin: 2em;
+      font-size: 80%;
+    }
+
+      #post .gallery img {
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.33);
+        overflow: hidden;
+      }
+
 
 #related {
   margin-top: 2em;
