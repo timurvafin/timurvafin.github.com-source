@@ -71,7 +71,7 @@ module Jekyll
 
     def render(context)
 <<-EOF
-<ol class="gallery">
+<ul class="gallery">
   #{photos.collect{|photo| render_thumbnail(photo)}.join}
 </ul>
 EOF
